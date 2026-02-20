@@ -170,7 +170,11 @@ class DiarizationAligner:
         words: List[WordTimestamp], speaker: str
     ) -> AlignedSegment:
         """Create an AlignedSegment from a list of words."""
-        text = "".join(w.word for w in words).strip()
+        # Whisper word tokens may include leading spaces; handle both cases gracefully
+        raw = "".join(w.word for w in words).strip()
+        if not raw:
+            raw = " ".join(w.word.strip() for w in words if w.word.strip())
+        text = raw
         return AlignedSegment(
             speaker=speaker,
             text=text,
