@@ -1,0 +1,40 @@
+# PyTorch with ROCm support (AMD GPU)
+# Install separately: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.0
+
+# Audio capture and processing
+sounddevice>=0.4.6
+numpy>=1.24.0
+scipy>=1.11.0
+noisereduce>=3.0.0
+
+# Voice Activity Detection
+# Silero VAD is loaded via torch.hub (no separate package needed)
+
+# Automatic Speech Recognition
+faster-whisper>=1.0.0
+openai-whisper>=20231117
+
+# Speaker Diarization
+pyannote.audio>=3.1.0
+
+# Punctuation and capitalization
+deepmultilingualpunctuation>=1.0.1
+
+# Pipeline utilities
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+loguru>=0.7.2
+
+# Evaluation
+jiwer>=3.0.3
+
+# UI
+streamlit>=1.32.0
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0
+
+# Utilities
+tqdm>=4.66.0
+click>=8.1.7

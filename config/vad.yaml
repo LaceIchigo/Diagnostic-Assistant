@@ -1,0 +1,18 @@
+# Silero VAD configuration
+# https://github.com/snakers4/silero-vad
+
+model:
+  repo: "snakers4/silero-vad"
+  model_name: "silero_vad"
+  force_reload: false
+
+detection:
+  threshold: 0.5                # Speech probability threshold (0.0 - 1.0)
+  min_speech_duration_ms: 250   # Minimum speech segment duration in milliseconds
+  min_silence_duration_ms: 100  # Minimum silence duration to split segments
+  window_size_samples: 512      # Audio window size (for 16kHz: 512, 1024, or 1536)
+  speech_pad_ms: 30             # Padding added to speech segments in milliseconds
+
+processing:
+  sample_rate: 16000            # Must match global audio sample_rate
+  return_seconds: true          # Return timestamps in seconds (not samples)

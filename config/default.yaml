@@ -1,0 +1,24 @@
+# Global pipeline configuration for Diagnostic Assistant
+# Optimized for Romanian medical consultations
+
+audio:
+  sample_rate: 16000       # Hz - required by Whisper and Silero VAD
+  channels: 1              # Mono audio
+  dtype: float32           # Audio data type
+  device_index: 0          # Audio input device index (see sounddevice.query_devices())
+  chunk_duration: 1.5      # Seconds per audio chunk
+  overlap: 0.5             # Seconds of overlap between consecutive chunks
+  buffer_size: 32          # Number of chunks in circular buffer
+
+pipeline:
+  language: "ro"           # Romanian language code
+  device: "cuda"           # Use "cuda" for ROCm (PyTorch ROCm maps to cuda device)
+  num_threads: 4           # Number of processing threads
+  max_speakers: 2          # Maximum number of speakers (Doctor + Patient)
+
+output:
+  output_dir: "./output"
+  save_transcript: true
+  save_diarization: true
+  transcript_format: "json"  # json or txt
+  log_level: "INFO"

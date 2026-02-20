@@ -1,0 +1,18 @@
+# Punctuation model configuration
+# Uses deepmultilingualpunctuation
+# https://github.com/oliverguhr/deepmultilingualpunctuation
+
+model:
+  model_name: "oliverguhr/fullstop-punctuation-multilang-large"
+  # Supported languages include Romanian (ro)
+  language: "ro"
+  device: "cuda"          # ROCm uses "cuda" device string
+
+processing:
+  batch_size: 32
+  max_length: 512         # Maximum token length per segment
+  overlap_size: 10        # Token overlap between batches for long texts
+
+output:
+  add_capitalization: true    # Capitalize first letter after punctuation
+  punctuation_chars: ".?!,"   # Characters to restore

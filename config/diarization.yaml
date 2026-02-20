@@ -1,0 +1,26 @@
+# Pyannote.audio diarization configuration
+# https://github.com/pyannote/pyannote-audio
+
+model:
+  pipeline_name: "pyannote/speaker-diarization-3.1"
+  # Requires HuggingFace token - set HUGGINGFACE_TOKEN env var
+  use_auth_token: true
+
+sliding_window:
+  window_size: 20         # Seconds - diarization window size
+  step_size: 10           # Seconds - sliding step between windows
+
+speakers:
+  min_speakers: 2         # Minimum number of speakers
+  max_speakers: 2         # Maximum speakers (Doctor + Patient in a consultation)
+
+clustering:
+  method: "AgglomerativeClustering"
+  threshold: 0.7535
+
+segmentation:
+  min_duration_on: 0.0    # Minimum duration of a speech segment (seconds)
+  min_duration_off: 0.0   # Minimum duration of a silence segment (seconds)
+
+output:
+  return_embeddings: false

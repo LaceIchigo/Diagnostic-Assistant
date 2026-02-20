@@ -1,0 +1,30 @@
+# Whisper ASR configuration
+# Compatible with faster-whisper and openai-whisper
+
+model:
+  model_size: "medium"          # tiny, base, small, medium, large-v2, large-v3
+  device: "cuda"                # ROCm uses "cuda" device string in PyTorch
+  compute_type: "float16"       # float16 for GPU, int8 for CPU
+  download_root: null           # null = use default cache dir
+
+transcription:
+  language: "ro"                # Romanian
+  task: "transcribe"            # transcribe or translate
+  beam_size: 5                  # Beam search size (higher = more accurate, slower)
+  best_of: 5                    # Number of candidates for sampling
+  patience: 1.0                 # Beam search patience factor
+  length_penalty: 1.0           # Length penalty for beam search
+  temperature: 0.0              # Sampling temperature (0 = greedy)
+  compression_ratio_threshold: 2.4
+  log_prob_threshold: -1.0
+  no_speech_threshold: 0.6
+
+timestamps:
+  word_timestamps: true         # Enable word-level timestamps
+  prepend_punctuations: "\"'"¿([{-"
+  append_punctuations: "\"'.。,，!！?？:：")]}、"
+
+output:
+  verbose: false
+  condition_on_previous_text: true
+  initial_prompt: null          # Optional prompt to guide transcription style
