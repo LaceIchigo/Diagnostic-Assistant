@@ -180,6 +180,27 @@ Arhitectura sistemului suportă scalare de la 2 cabinete medicale la 200+ fără
 - Suport multi-device audio
 - Buffer circular thread-safe
 
+## Întrebări Frecvente (FAQ)
+
+### Sistemul accesează o bază de date medicală?
+
+**Nu.** Diagnostic Assistant nu are nicio conexiune la baze de date medicale, dosare electronice ale pacienților (EMR/EHR) sau orice altă sursă de date externe. Sistemul funcționează exclusiv pe semnalul audio captat de microfon în timp real:
+
+- **Intrare**: semnal audio brut de la microfon
+- **Ieșire**: text transcris, structurat pe roluri (Doctor/Pacient), salvat local
+
+Nu există apeluri la API-uri externe, interogări SQL, conexiuni la rețea (în afara descărcării inițiale a modelelor AI) sau acces la fișiere de date ale pacienților. Toate modelele AI (Whisper, Silero VAD, pyannote) rulează complet offline, local pe mașina utilizatorului, după descărcarea inițială.
+
+### Datele audio sunt trimise în cloud?
+
+**Nu.** Tot procesarea are loc local. Nu se transmite niciun fel de date audio sau text în afara dispozitivului pe care rulează sistemul.
+
+### Sistemul poate emite diagnostice?
+
+**Nu.** Sistemul are exclusiv rol de transcriere și structurare a conversației. Nu analizează conținutul medical, nu emite diagnostice și nu recomandă tratamente. Decizia medicală finală aparține exclusiv medicului.
+
+---
+
 ## Licență
 
 MIT License — vezi [LICENSE](LICENSE) pentru detalii.

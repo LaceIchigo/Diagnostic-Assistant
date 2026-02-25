@@ -24,6 +24,19 @@ Sistemul procesează exclusiv semnalul audio brut în timp real, fără:
 
 Toate datele audio sunt procesate local, pe dispozitivul medicului, și nu părăsesc infrastructura cabinetului medical.
 
+### 2.1.1 Fără Acces la Baze de Date Medicale
+
+**Sistemul nu accesează nicio bază de date medicală.**
+
+Diagnostic Assistant nu are nicio interfață — directă sau indirectă — cu:
+- Dosare electronice ale pacienților (EMR/EHR)
+- Baze de date de diagnostice sau medicamente
+- Sisteme de imagistică medicală (PACS, DICOM)
+- Registre naționale sau regionale de sănătate
+- Orice altă sursă de date structurate despre pacienți
+
+Singura sa intrare este semnalul audio de la microfon. Singura sa ieșire este textul transcris salvat local pe dispozitivul utilizatorului. Nu efectuează niciun apel de rețea în timpul procesării (conexiunea la internet este necesară doar pentru descărcarea inițială a modelelor AI).
+
 ### 2.2 Abstractizarea și Anonimizarea
 
 **Învățarea se face exclusiv pe date abstractizate.**
