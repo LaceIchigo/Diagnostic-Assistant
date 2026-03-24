@@ -1,0 +1,12 @@
+TRANSCRIPT:
+SPEAKER_01: Be...
+SPEAKER_01: Cătării în pat!
+SPEAKER_01: Ba puti! Go, go!
+SPEAKER_01: Nu m-am făcut, nu m-am făcut
+SPEAKER_01: Deci, deci, ca te-ai zis, nu-mi gajewa!
+SPEAKER_01: Go, go, go!
+
+
+=================================
+RAPORT MEDICAL:
+❌ Eroare la conectarea cu Ollama: model 'llama3.1' not found (status code: 404)

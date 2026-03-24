@@ -1,0 +1,41 @@
+TRANSCRIPT:
+SPEAKER_01: Hello, I am doctor, very good doctor, yes!
+SPEAKER_00: Helo! I am faiatient!
+SPEAKER_00: I have...
+SPEAKER_00: Problems...
+SPEAKER_00: cu stomecul meu.
+SPEAKER_00: It hurts!
+SPEAKER_01: Ah, yes!
+SPEAKER_01: I see you have problems with your stomach of course.
+
+
+=================================
+RAPORT MEDICAL:
+**Raport medical**
+
+**1. ROLURI**
+
+*   **SPEAKER_01**: Medicul (Dr.)
+*   **SPEAKER_00**: Pacientul (faiatient)
+
+**2. MOTIVUL PREZENTĂRII**
+
+Pacientul prezintă o problemă cu stomecul său, care o afectează foarte mult.
+
+**3. SIMPTOME**
+
+*   Problemele cu stomecul său incluzând:
+    * Haina
+    * Dureri
+
+**4. SUGESTII DIAGNOSTIC**
+
+2-3 posibile afecțiuni generale care pot fi asociate cu problemul cu stomecul său:
+
+*   **Gastroesofagitelinitizarea (GERD)**
+*   **Stomac tens și ulcer**
+*   **Intoleranță la alcool sau alimente**
+
+**5. AVERTISMENT**
+
+Disculuzie că acesta e un rezumat AI, fără a fi o opțiune medicală reală.

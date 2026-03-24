@@ -36,7 +36,7 @@ def diarizeaza_audio(nume_fisier="test_audio.wav", hf_token="hf_RjZkJUtGDOyAuuct
         
         print("🧠 Încep procesarea acustică (căutăm vorbitorii)...")
         # 5. Pasăm dicționarul către pipeline în loc să dăm numele fișierului!
-        diarizare = pipeline(audio_in_memory)
+        diarizare = pipeline(audio_in_memory, num_speakers=2)
         
         print("\n✅ Rezultatul diarizării (Cine a vorbit și când):")
         print("-" * 40)

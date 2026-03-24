@@ -40,7 +40,7 @@ def proceseaza_consultatie(nume_fisier="test_audio.wav"):
     waveform = torch.from_numpy(data_float).unsqueeze(0)
     
     audio_in_memory = {"waveform": waveform, "sample_rate": sample_rate}
-    diarizare = pyannote_pipeline(audio_in_memory)
+    diarizare = pyannote_pipeline(audio_in_memory, num_speakers=2)
     
     # Adaptare pentru Pyannote 4.x
     if hasattr(diarizare, "speaker_diarization"):

@@ -3,7 +3,7 @@ import time
 
 def transcrie_audio(nume_fisier="test_audio.wav"):
     # 1. Am crescut modelul la "small" (descarcă aprox. 500MB prima dată)
-    model_size = "medium" 
+    model_size = "small" 
     
     print(f"⏳ Încarc modelul Whisper ({model_size})...")
     model = WhisperModel(model_size, device="cpu", compute_type="int8")
