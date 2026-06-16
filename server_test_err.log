@@ -1,0 +1,10 @@
+Using cache found in C:\Users\lolst/.cache\torch\hub\snakers4_silero-vad_master
+INFO:     Started server process [16664]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+KERNELBASE.dll     00007FFF6A0BA3CD  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFF6C0DE8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FFF6C84C3FC  Unknown               Unknown  Unknown

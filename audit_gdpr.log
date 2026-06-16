@@ -1,0 +1,8 @@
+{"timestamp": "2026-05-08T16:43:30.306037", "action": "PATIENT_CREATED", "user": "medic", "details": "Pacient ID 2 inregistrat"}
+{"timestamp": "2026-05-08T16:44:32.581062", "action": "CORRECTION_SAVED", "user": "medic", "details": "Corectie consultatie ID 1"}
+{"timestamp": "2026-05-08T16:44:40.902602", "action": "DATA_EXPORT", "user": "medic", "details": "Export date pacient ID 2"}
+{"timestamp": "2026-05-08T16:44:57.093759", "action": "DATA_EXPORT", "user": "medic", "details": "Export date pacient ID 1"}
+{"timestamp": "2026-05-08T16:45:23.403628", "action": "RIGHT_TO_ERASURE", "user": "medic", "details": "Pacient ID 2 sters cu 0 consultatii"}
+{"timestamp": "2026-05-08T16:48:02.828689", "action": "CONSULTATION_SAVED", "user": "medic", "details": "Consultatie ID 2"}
+{"timestamp": "2026-05-13T17:25:57.461116", "action": "CORRECTION_SAVED", "user": "medic", "details": "Corectie consultatie ID 1"}
+{"timestamp": "2026-05-20T10:58:31.417249", "action": "CONSULTATION_SAVED", "user": "medic", "details": "Consultatie ID 3"}

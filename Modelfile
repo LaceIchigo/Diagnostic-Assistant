@@ -1,0 +1,4 @@
+FROM ./llama32-medical-merged
+PARAMETER temperature 0.1
+PARAMETER top_p 0.9
+PARAMETER num_predict 2048

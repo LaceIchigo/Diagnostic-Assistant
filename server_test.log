@@ -1,0 +1,9 @@
+Loading Whisper + Silero VAD...
+Models ready!
+INFO:     127.0.0.1:52025 - "GET /pacienti HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52025 - "GET /pacienti/1/consultatii HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52025 - "PUT /consultatii/1/corectie HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52025 - "GET /gdpr/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52025 - "GET /gdpr/audit-log?limit=1 HTTP/1.1" 200 OK
+Session: 2d6b89bf
+INFO:     127.0.0.1:52025 - "POST /sessions HTTP/1.1" 200 OK

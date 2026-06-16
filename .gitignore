@@ -1,0 +1,32 @@
+# =========================
+# SECRETE ȘI BAZE DE DATE (CRITIC!)
+# =========================
+.env
+cabinet.db
+
+# =========================
+# PYTHON & MEDII VIRTUALE
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+# Fișiere de date descărcate automat de HuggingFace/Pyannote
+~/.cache/huggingface/
+
+# =========================
+# REACT & NODE.JS (FRONTEND)
+# =========================
+node_modules/
+dist/
+build/
+.npm/
+
+# =========================
+# SETĂRI VS CODE & SISTEM
+# =========================
+.vscode/
+.DS_Store
+Thumbs.db
